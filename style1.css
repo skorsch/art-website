@@ -1,0 +1,490 @@
+
+* { /* resets all default margins to zero */
+  margin: 0;
+  padding: 0;
+  cursor: url(assets/cursor.png), auto;
+}
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+  cursor: url(assets/hand.png), auto;
+}
+
+@font-face {
+  font-family: "Msoft";
+  src: url("./assets/M8pt.woff");
+}
+
+h1 {
+  color: black;
+  text-align: left;
+  font-family: "Msoft";
+  }
+  
+#welcome {
+  margin-top: 60px;
+  height: 198px;
+  width: 592px;
+  left: 13%;  /*causes relative movement*/
+  background-image: url("assets/main-win.png");
+  font-family: Times New Roman;
+  padding-top: 55px;
+  padding-left: 25px;
+  box-sizing: border-box; /* stops padding from adding to width */
+  position: absolute;
+  z-index: 10; /*bigger number means on top of others*/
+}
+
+.welcome-text{
+  height: 40px;
+  width: 553px;
+  background-image: url("assets/title-gif.gif");
+  margin-top: 20px;
+  margin-left: -5px;
+  position: relative;
+}
+
+/* SIDE ICONS */
+#icons {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 9;
+  cursor: url(assets/hand.png), auto;
+}
+
+.email {
+  height: 88px;
+  width: 60px;
+  background-image: url("assets/email.png");
+  margin-top: 20px;
+  margin-left: 20px;
+  position: absolute; 
+  z-index: 9;
+}
+.email img{
+  cursor: url(assets/hand.png), auto;
+}
+.art {
+  height: 88px;
+  width: 60px;
+  background-image: url("assets/art.png");
+  margin-top: 20px;
+  margin-left: 100px;
+  position: absolute;
+  z-index: 9;
+}
+.art img{
+  cursor: url(assets/hand.png), auto;
+}
+.misc {
+  height: 88px;
+  width: 60px;
+  background-image: url("assets/misc.png");
+  margin-top: 130px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: 9;
+}
+.misc img{
+  cursor: url(assets/hand.png), auto;
+}
+.games {
+  height: 88px;
+  width: 62px;
+  background-image: url("assets/games.png");
+  margin-top: 130px;
+  margin-left: 100px;
+  position: absolute;
+  z-index: 9;
+}
+.games img{
+  cursor: url(assets/hand.png), auto;
+}
+.music {
+  height: 88px;
+  width: 60px;
+  background-image: url("assets/music.png");
+  margin-top: 240px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: 9;
+}
+.music img{
+  cursor: url(assets/hand.png), auto;
+}
+
+/* MAIN PAGE WINDOWS */
+#links {
+  height: 394px;
+  width: 592px;
+  background-image: url("assets/links.png");
+  margin-top: 278px;
+  left: 20%;
+  position: absolute;
+  padding-top: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box; /* stops padding from adding to width */
+  text-align: center;
+  font-size: 20px;
+  z-index: 10;
+}
+
+#leaf{
+  height: 644px;
+  width: 192px;
+  background-image: url("assets/leaf.gif");
+  margin-top: -630px;
+  margin-left: 572px;
+  position: relative;
+  z-index: 0;
+}
+
+#water-png-box{
+  height: 334px;
+  width: 296px;
+  background-image: url("assets/water-png-box.png");
+  margin-top: 40px;
+  left: 1180px;
+  position: absolute;
+  z-index: 8;
+}
+
+#water-div{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 258px;
+  width: 276px;
+  margin-top: 46px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 8;
+}
+
+#water-png{
+  height: 1000px;
+  width: 276px;
+  background-image: url("assets/water.png");
+  
+}
+
+#water-box{
+  height: 334px;
+  width: 296px;
+  background-image: url("assets/water-box.png");
+  margin-top: 100px;
+  left: 940px;
+  position: absolute;
+  z-index: 8;
+}
+
+#water{
+  height: 258px;
+  width: 276px;
+  background-image: url("assets/water.gif");
+  margin-top: 46px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 8;
+}
+
+#beach-box{
+  height: 550px;
+  width: 364px;
+  background-image: url("assets/beach-box.png");
+  margin-top: 300px;
+  left: 1175px;
+  position: absolute;
+  z-index: 9;
+}
+
+#beach{
+  height: 472px;
+  width: 344px;
+  background-image: url("assets/beach.gif");
+  margin-top: 46px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 9;
+}
+
+#Windows-box{
+  height: 296px;
+  width: 196px;
+  background-image: url("assets/Windows-box.png");
+  margin-top: 325px;
+  left: 150px;
+  position: absolute;
+  z-index: 8;
+}
+
+#Windows{
+  height: 220px;
+  width: 176px;
+  background-image: url("assets/Windows.gif");
+  margin-top: 46px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 8;
+}
+
+#weather-div{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 196px;
+  width: 456px;
+  margin-top: 46px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 7;
+}
+
+#weather-png{
+  height: 260px;
+  width: 456px;
+  background-image: url("assets/weather.png");
+  
+}
+
+#weather-box{
+  height: 272px;
+  width: 476px;
+  background-image: url("assets/weather-box.png");
+  margin-top: 560px;
+  left: 20px;
+  position: absolute;
+  z-index: 7;
+}
+
+#computer-box{
+  height: 500px;
+  width: 420px;
+  background-image: url("assets/computer-box.png");
+  margin-top: 160px;
+  left: 1480px; 
+  position: absolute;
+  z-index: 10;
+}
+
+#computer{
+  margin-top: 46px;
+  margin-left: 10px;
+  position: relative;
+}
+
+#computer-2-box{
+  height: 326px;
+  width: 346px;
+  background-image: url("assets/computer-2-box.png");
+  margin-top: 640px;
+  left: 750px;
+  position: absolute;
+  z-index: 5;
+}
+
+#computer-2{
+  height: 251px;
+  width: 327px;
+  margin-top: 46px;
+  margin-left: 10px;
+  background-image: url("assets/computer-2.gif");
+}
+
+#sakura-left{
+  position: absolute;
+  height: 272px;
+  width: 396px;
+  margin-top: 840px;
+  left: 10px;
+  background-image: url("assets/sakura-left.png");
+  z-index: 2;
+}
+
+#sakura-right{
+  position: absolute;
+  height: 272px;
+  width: 396px;
+  margin-top: 840px;
+  right: 10px;
+  background-image: url("assets/sakura-right.png");
+  z-index: 2;
+}
+
+/* NOSTALGIA BOX  */
+#nostalgia-box{
+  height: 720px;
+  width: 1280px;
+  background-image: url("assets/nostalgia-box.png");
+  position: absolute;
+  left: 50%;
+  margin-left: -640px;
+  margin-top: 900px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  padding-top: 46px;
+  padding-left: 10px;
+  z-index: 9;
+}
+#lego-island-div{
+  position: absolute;
+  height: 192px;
+  width: 174px;
+  overflow: hidden;
+}
+#pipes-div{
+  position: absolute;
+  height: 262px;
+  width: 330px;
+  margin-left: 180px;
+  overflow: hidden;
+}
+#freddi-div{
+  position: absolute;
+  height: 262px;
+  width: 384px;
+  margin-left: 516px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#miniclip-div{
+  position: absolute;
+  height: 264px;
+  width: 354px;
+  margin-left: 906px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#pinball-div{
+  position: absolute;
+  height: 198px;
+  width: 174px;
+  margin-top: 198px;
+  overflow: hidden;
+}
+#leap-div{
+  position: absolute;
+  height: 128px;
+  width: 128px;
+  margin-top: 268px;
+  margin-left: 180px;
+  overflow: hidden;
+}
+#lego-div{
+  position: absolute;
+  height: 376px;
+  width: 134px;
+  margin-top: 268px;
+  margin-left: 314px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+#kidpix-div{
+  position: absolute;
+  height: 376px;
+  width: 498px;
+  margin-top: 268px;
+  margin-left: 454px;
+  overflow: hidden;
+}
+#bionacle-div{
+  position: absolute;
+  height: 170px;
+  width: 302px;
+  margin-top: 268px;
+  margin-left: 958px;
+  overflow: hidden;
+}
+#tonka-div{
+  position: absolute;
+  height: 242px;
+  width: 308px;
+  margin-top: 402px;
+  overflow-x: overflow;
+  overflow-y: hidden;
+}
+#solitare-div{
+  position: absolute;
+  height: 200px;
+  width: 302px;
+  margin-top: 444px;
+  margin-left: 958px;
+  overflow: hidden;
+}
+
+/* FOOTER TYPE STUFF */
+#stem-left{
+  position: absolute;
+  height: 200px;
+  width: 204px;
+  margin-top: 1490px;
+  left: 0px;
+  background-image: url("assets/stem-left.png");
+  z-index: 2;
+}
+
+#stem-right{
+  position: absolute;
+  height: 200px;
+  width: 204px;
+  margin-top: 1490px;
+  right: 0px;
+  background-image: url("assets/stem-right.png");
+  z-index: 2;
+}
+
+#footer {
+  height: 44px;
+  width: 1160px;
+  font-family: Sans-serif;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 12;
+}
+#footer-right {
+  height: 44px;
+  width: 1920px;
+  background-image: url("assets/bar-right.png");
+  font-family: Sans-serif;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+}
+
+#txt{
+  position: fixed;
+  right: 32px;
+  bottom: 8px;
+  z-index: 12;
+  font-size: 14px;
+  color: #000690;
+  
+}
+
+body {
+  min-height:100%;
+  background-color: #0089da;
+  color: black;
+  font-size: 9px;
+  font-family: "Msoft";   
+}
+
+/* MISC PAGE STUFF */
+.camerons-box {
+  position: absolute;
+  height: 488px;
+  width: 640px;
+  margin-top: 300px;
+  margin-left: 158px;
+  background-image: url("assets/camerons.png");
+  z-index: 2;
+  
+}
+
+.spacer {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin-top: 880px;
+}

@@ -1,0 +1,123 @@
+* { /* resets all default margins to zero */
+  margin: 0;
+  padding: 0;
+  cursor: url(assets/cursor.png), auto;
+}
+
+@font-face {
+  font-family: "Msoft";
+  src: url("./assets/M8pt.woff");
+}
+
+body {
+  min-height:100%;
+  background-color: #0089da;
+  color: black;
+  font-family: "Msoft";
+  font-size: 8pt;
+}
+
+.exit{
+  cursor: url(assets/hand.png), auto;
+  width: 26px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  margin-left: 604px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  
+  background-image: url("assets/button.png");
+}
+
+.exit:hover{
+  background-image: url("assets/button-hover.png");
+}
+
+.exit:active{
+ background-image: url("assets/button-click.png");
+}
+
+#snake-left{
+  width: 334px;
+  height: 784px;
+  position: fixed;
+  top: 140px;
+  left: 0;
+  background-image: url("assets/snake-left.png");
+  z-index: -1;
+}
+
+#snake-right{
+  width: 334px;
+  height: 784px;
+  position: fixed;
+  top: 140px;
+  right: 0;
+  background-image: url("assets/snake-right.png");
+  z-index: -1;
+}
+
+#snake-behind{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 748px;
+  right: 0;
+  background-color: #00ffff;
+  z-index: -2;
+}
+
+.wrapper-wrapper-1{
+  box-sizing: border-box; /* stops padding from adding to width */
+  background-image: url("assets/gallery.png");
+  margin: auto;
+  width: 1280px;
+  height: 720px;
+  background-color: #ffdddf;
+  padding-top: 46px;
+  margin-top: 60px;
+  z-index: 10;
+}
+
+.wrapper-wrapper{
+  width: 1260px;
+  height: 644px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.wrapper {
+  width: 1260px;
+  height: 644px;      /*just add length here if you need to increase number of rows!!*/
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 200px;
+}
+
+#warning{
+  box-sizing: border-box; /* stops padding from adding to width */
+  width: 504px;
+  height: 184px;
+  background-image: url("assets/warning.png");
+  z-index: 11;
+  top: 720px;
+  right: 100px;
+  position: absolute;
+  font-size: 10pt;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 30px;
+}
+
+.inside {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.inside img{
+  cursor: url(assets/hand.png), auto;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0, minimum-scale=0.75">
+    <title>aconfuseddragon's art and nostalgia corner</title>
+
+    <link href="/style1.css" rel="stylesheet" type="text/css" media="all">
+    
+    <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      m = checkTime(m);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+  </head>
+  
+  <body onload="startTime()">
+    
+    <div id="welcome">
+        <h1><p>aconfuseddragon's</h1>
+        <br>
+        <div class="welcome-text">
+          <a href="index.html"><img src="assets/title-gif.gif" title= "Home"> </a>
+        </div>
+    </div>
+    
+    <div class="camerons-box">
+      <embed src="https://www.cameronsworld.net/" style="width:620px; height: 414px; margin-left: 10px; margin-top: 46px;">
+    </div>
+    
+    
+    <div class="email">
+      <a href="mailto: aconfuseddragon@gmail.com"><img src="assets/email.png" title= "aconfuseddragon@gmail.com"> </a>
+    </div>
+    <div class="art">
+      <a href="gallery.html"><img src="assets/art.png" title= "Gallery"> </a>
+    </div>
+    <div class="misc">
+      <a href="misc.html"><img src="assets/misc.png" title= "Inspirations + Cool Stuff"> </a>
+    </div>
+    <div class="games">
+      <a href="https://aconfuseddragon.itch.io/"><img src="assets/games.png"> </a>
+    </div>
+    <div class="music">
+    </div>
+    
+    
+  <div id="txt">
+  </div>
+  <div id="footer">
+    <img src="./assets/bottombar-2.png">
+  </div>
+  <div id="footer-right">
+    
+  </div>
+    <div class="spacer">
+    </div>
+    
+  </body>
+  
+</html>
