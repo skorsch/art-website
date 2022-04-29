@@ -9,6 +9,25 @@
   src: url("./assets/M8pt.woff");
 }
 
+/* SIDE ICONS */
+.itemIconContainer {
+  position: absolute;
+  display: flex;
+  z-index: 9;
+  width: 160px;
+  flex-wrap: wrap;
+}
+.itemIcon {
+  display: flex;
+  height: 88px;
+  width: 60px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.itemIcon img{
+  cursor: url(assets/hand.png), auto;
+}
+
 body {
   min-height:100%;
   background-color: #0089da;
@@ -69,15 +88,22 @@ body {
   z-index: -2;
 }
 
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .wrapper-wrapper-1{
   box-sizing: border-box; /* stops padding from adding to width */
   background-image: url("assets/gallery.png");
-  margin: auto;
+  margin-top: 60px;
   width: 1280px;
   height: 720px;
   background-color: #ffdddf;
   padding-top: 46px;
-  margin-top: 60px;
   z-index: 10;
 }
 
